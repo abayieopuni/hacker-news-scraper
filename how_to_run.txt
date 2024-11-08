@@ -1,0 +1,52 @@
+Step-by-Step Instructions to Run the Hacker News Scraper
+
+1. Open Your Terminal
+   - Open a terminal window on your computer (Command Prompt, PowerShell, Terminal, etc.).
+
+2. Navigate to Your Project Directory
+
+3. Install Dependencies (if not already done)
+   - Ensure you have installed all necessary dependencies. If you haven't done this yet, run:
+     npm install
+
+4. Run the Scraper
+   - To execute the scraper and start fetching articles from Hacker News, use the following command:
+     npm start
+
+5. Monitor the Output
+   - As the scraper runs:
+     - A new browser window will open, navigating to the Hacker News "Newest" articles page.
+     - The console will display the number of articles and timestamps fetched, along with the timestamps of the first and last articles.
+     - After completion, the results will be saved to a file named `articles.json` in your project directory.
+
+   Example Console Output:
+   Number of articles: 58
+   Number of timestamps: 30
+   Total articles fetched: 30
+   First article timestamp: Tue Nov 05 2024 00:30:00 GMT+0000 (Coordinated Universal Time)
+   Last article timestamp: Tue Nov 05 2024 01:00:00 GMT+0000 (Coordinated Universal Time)
+   Articles saved to articles.json
+
+6. Check the Output File which will be called article.json
+
+
+7. Run the Tests
+   - To ensure your scraper works correctly, run the tests by executing the following command:
+     npm test
+   - This will run the tests defined in `hackerNews.test.js` using Jest.
+
+8. Monitor Test Results
+   - Check the console output to see the results of the tests. You should see a summary indicating whether all tests passed.
+
+   Example Test Output:
+   PASS  hackerNews.test.js
+     Hacker News Scraping Tests
+       ✓ Fetch articles (73 ms)
+       ✓ Fetch timestamps (11 ms)
+       ✓ Parse timestamps correctly (1 ms)
+       ✓ Ensure articles and timestamps match (23 ms)
+
+   Test Suites: 1 passed, 1 total
+   Tests:       4 passed, 4 total
+
+By following these steps, you will successfully run your Hacker News scraper.
